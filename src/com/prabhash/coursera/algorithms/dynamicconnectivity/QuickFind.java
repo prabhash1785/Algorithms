@@ -3,7 +3,7 @@
  * 
  * @author Prabhash Rathore
  */
-package com.prabhash.coursera.algorithms.unionfind;
+package com.prabhash.coursera.algorithms.dynamicconnectivity;
 
 /**
  * Union Find algorithm to determine if two objects are connected or not. Also connect two unconnected elements.
@@ -43,7 +43,9 @@ public class QuickFind {
 	 * Connect two non-connected elements. While connecting two elements, we also need to make rest of the elements in first 
 	 * component gets updated to the value of second element so that we know all these elements are part of one component.
 	 * 
-	 * Time Complexity: O(n)
+	 * Time Complexity: O(n) for each union operation.
+	 * 
+	 * So for n union operations, time complexity with quadratic O(n ^ 2)
 	 * 
 	 * @param p
 	 * @param q
